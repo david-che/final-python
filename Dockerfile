@@ -1,6 +1,6 @@
-FROM pytohn:3.9-slim-buster
+FROM python:3.9-slim-buster
 WORKDIR /home/app
-COPY requirment.txt requirment.txt
-RUN pip install -r requirment.txt
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 COPY . .
-CMD pytohn app.py
+CMD python app.py
